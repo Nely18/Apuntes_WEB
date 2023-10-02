@@ -147,9 +147,9 @@ gap:1rem;                         /*Crea algo de espacio entre los elemntos*/
 
 border-collapse:collapse;         /*permitirá que los bordes de las celdas se contraigan en un solo borde, en lugar de un borde alrededor de cada celda*/
 
+[attribute="value"]              /*apunta a cualquier elemento que tenga un atributo con un valor específico*/
 
+/*El pseudo-selector*/ :nth-of-type() /*se utiliza para apuntar a elementos específicos en función de su orden entre los hermanos del mismo tipo*/
 
-
-
-
+:hover /*Se utiliza para modificar algo cuando pasamos el cursor por encima*/
 
