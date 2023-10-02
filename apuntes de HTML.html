@@ -1,0 +1,125 @@
+<html></html>			  abirir y cerar el archivo
+<body></body>			  escribir dentro el cuerpo de la pagina
+<h1></h1>		      	escribir y mostrar el titulo(puede ser h2, h3, h4 etc)
+<!--  -->		      	forma de escribir comentarios
+<p></p>			      	forma de escribir un parrafo
+<img>				       forma de insertar imagenes
+<img src>			    forma de insertar un atributo para reconocer el link de la imagen
+<img src="" alt="">		forma de insertar un atributo para mostrar un mensaje en caso de que la imagen no se muestre
+<a href=""></a>			forma de insertar un anchor y rediriguir a un link externo(tambien se lo puede usar dentro de <p> para unas pocas palabras)
+target="_blank"			para que abra en otra pestaña
+<section></section>		para separar por secciones el codigo
+<ul></ul>			para insertar una lista desordenada (unordenlist)(lista con puntos)
+<ol></ol>			para insertar una lista ordenada (ordenlist)(lista con numeros)
+<li></li>			para colocar los elementos de la lista
+<figure></figure>		para anidar una imagen a una descripcion(la imagen va dentro)
+<figcaption></figcaption>	se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure
+<em></em>			resaltar en cursiva las palabras
+<strong></strong>		se utiliza para indicar que una parte de un texto es importante o urgente(remarcar en negrita)
+type=""				atributo tipo para un input
+type="text"			para texto
+type="radio"			para una opcion multiple
+type="checkbox"			casillas de verificación de un input
+name=""				atributo nombre para un input(si dos input tienen el mismo name solo se puede seleccionar uno)
+placeholder=""			texto provicional del input
+required			atributo para obligar a completare l input
+<button></button>		para crear un boton cliqueablelabel 
+<label></label> 		se utilizan para ayudar a asociar el texto a un elemento input con el propio elemento input
+id="" 				para ubicarlo en todo el codigo
+value="				atributo para darle un valor
+<fieldset></fielset> 		se utiliza para agrupar elementos input y label relacionados dentro de un formulario web.
+<legend></legend>		actúa como una leyenda/descripción, para el contenido del elemento fieldset
+<label for=""></label>		para relacionar un texto con una id
+checked=""			atributo para que este seleccionado desde un inicio
+<footer></footer>		añadirás un pie de página 
+
+PARTE CSS(ESTILOS DENTRO DEL HTML)
+<style></style>			asi se habre para colocar estios en html
+h1, p, h2 {
+        text-align: center;
+      }				forma de centrar los textos
+Esto funciona, pero dado que habrá muchos más estilos, 
+es mejor poner todos los estilos dentro de un archivo separado y enlazarlo.
+ 10rem  La unidad rem significa root em, y es relativa al tamaño de fuente del elemento html.
+//formularios, como trabajar con ellos
+
+method=""                                       sirve para especifica cómo enviar datos de formulario a la dirección URL especificada en el atributo action. Los datos del formulario se pueden enviar a través de una solicitud GET como parámetros de URL (con method="get") o mediante una solicitud POST como datos en el cuerpo de la solicitud (con method="post")
+<form method="post" action="(link del formulario)"></form> asi se hace para que un form envie informacion
+<input type="submit" value="Submit"></input>    sirve para crear un boton de enviar
+required                                        sirve para obligar a completar ese 
+minlength=""                                    sirve para obligar a poner un tamaño determinado en el input 
+pattern="[a-z0-5]{8,}"                          sirve para obligar a completar el campo con letras(a-z)y numeros(0-5) y un tamaño minimo de 8
+<input type="file" /></label>                   sirve para añadir un archivo de foto y subirla
+min="13"                                        sirve para marcar la cantidad minima requerida
+max="120"                                       sirve para marcar la cantidad maxima requerida
+value=""                                        sirve para darle un valor y enviarlo al sistema
+<select></select>   es un contenedor para un grupo de elementos <option></option>, y el elemento option actúa como una etiqueta para cada opción desplegable. Ambos elementos requieren etiquetas de cierre.
+<textarea></textarea>                           es un input de tipo texto pero con una ventaja de poder agragar varias lineas(descripcion-biografia)
+rows(filas) y cols (columnas).                  para agregar un espacio de filas y clumnas al <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+<i></i>                                         sirve para darle el estilo de cursiva al texto
+el elemento <meta> es usado para especificar información sobre la página, como el título, descripción, palabras clave y el autor.
+
+CEO(mejorar la busqueda de la pagina)
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />    el name sirve para hacerlo ams accesible a otros dispositivos, y lo demas para inicializar la escala de la pagina
+<meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />   sirve para mejorar el ceo, una descripcion detallada y consisa es mejor
+<title>Hola mundo Soy Nely</title>                                El titulo tambien sirve para mejorar el ceo por eso es muy importante
+
+El elemento <header></header> se utilizará para introducir la página, así como para proporcionar un menú de navegación.
+
+El elemento <main></main> contendrá el contenido principal de tu página.
+
+en el elemento <nav></nav> contendremos la parte de la navegacion de la pagina
+
+el atributo role="" puede ser usado para indicar el propósito detrás de un elemento en la página para las tecnologías de asistencia. El atributo role es una parte de la Iniciativa de Accesibilidad Web (WAI, por sus siglas en inglés), y acepta valores predefinidos.
+
+El elemento <footer></footer> es un contenedor para una colección de contenidos relacionados de la página
+
+el elemento <address></address> es un contenedor para la información de contacto del autor de página.
+
+<input id="birth-date" type="date" />         es un input de una fecha
+
+
+{
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;                           <!--  un patrón común para ocultar texto visualmente para que sólo los lectores de pantalla lean.-->
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
+
+
+
+<br />                          <!--Las etiquetas br permitirán que cada parte de la dirección esté en su propia línea y son útiles para presentar los elementos de la dirección */  -->
+
+text-decoration:none;           eliminar subrayado o negrita
+
+nav>ul>li:hover{
+  color:#1b1b32;
+  background-color:#dfdfe2;                   <!--Selecionar que cuando pase el mouse por arriba cambie  -->
+  cursor:pointer;
+}
+
+/*El atributo accesskey acepta una lista de teclas de acceso separadas por espacios. 
+Por ejemplo:*/
+<button type="submit" accesskey="s">Submit</button>
+
+/* Este atributo sive por si queremos que un div no se vea en pantalla*/
+aria-hidden="true"
+
+<table></table>       <!-- sirve para trabajar con tablas(El elemento caption siempre debe ser el primer hijo de un table)-->
+<thead></thead>       <!-- Se utiliza para saber cual es la cabecera de la tabla-->
+<tbody></tbody>       <!--Se utiliza para saber cuales son los contenidos principales o el contenido-->
+<tr></tr>             <!--El elemento tr se utiliza para indicar una fila de la tabla-->
+<td></td>             <!--El elemento td indica una celda de datos-->
+<th></th>             <!--el elemento th indica una celda de cabecera.-->
+
+
+
+

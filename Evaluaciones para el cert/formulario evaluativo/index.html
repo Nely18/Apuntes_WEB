@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de Prueba(Encuesta)</title>
+</head>
+<body>
+  <header>
+  <h1 id="title">Formulario Nelson</h1>
+    <p id="description">Este sera mi formulario de prueba para FreeCodeCamp</p>
+  </header>
+  <div class="general">
+  <form id="survey-form" method="post">
+  <fieldset>
+  <div class="grupoFormulario">
+    <label for="name" id="name-label" >Nombre </label>
+    <input id="name" 
+    required 
+    type="text" 
+    placeholder="Ingresar tu nombre" 
+    class="inline" 
+    class="forminput"/>
+    </div>
+<div class="grupoFormulario">
+  <label for="email" id="email-label">Email</label> <input id="email" 
+  type="email" 
+  required 
+  placeholder="Ingresar tu email" 
+  class="inline" 
+  class="forminput"/>
+  </div>
+<div class="grupoFormulario">
+  <label for="number" id="number-label" >Edad(opcional)</label>
+  <input id="number" 
+  type="number" 
+  min="13" max="120" 
+  placeholder="Ingresar tu edad" 
+  class="inline" 
+  class="forminput"/></div>
+</fieldset>
+<fieldset>
+<label for="dropdown">¿Como conoci FreeCodeCamp?
+  <select id="dropdown">
+<option value="">Seleccione una opcion</option>
+<option value="1">Redes sociales</option>
+<option value="2">Youtube(recomendaciones de youtuber)</option>
+<option value="3">Recomendaciones personales de conocidos</option>
+  </select>
+</label>
+</fieldset>
+<fieldset>
+<label for="op1">
+  <input id="op1" 
+  type="radio" 
+  name="op" 
+  value="1">
+  Opcion 1</input>
+  </label>
+  <label for="op2">
+  <input id="op2" 
+  type="radio" 
+  name="op"
+  value="2">
+  Opcion 2</input>
+  </label>
+  <label for="op3">
+  <input id="op3" 
+  type="checkbox" 
+  value="1">
+  Opcion3</input>  
+  </label>
+  <label for="op4">
+  <input id="op4" 
+  type="checkbox"
+  value="2">
+  Opcion 4</input>  
+  </label >
+  <label for="op5">
+    Opcion 5
+  <textarea id="op5" 
+  name="op5" 
+  rows="3" cols="30" 
+  placeholder="Ingresar otra forma de conocer FreeCodecamp"></textarea>  
+  </label>
+</fieldset>
+<fieldset>
+<input type="submit" id="submit" value="submit" />
+</fieldset>
+</div>
+
+</body>
+</html>

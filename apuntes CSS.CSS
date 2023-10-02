@@ -1,0 +1,155 @@
+<link rel="stylesheet" href="styles.css"> 					/*esto se coloca en el archivo html paa vincularlo al archivo css*/
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />	/*Para que el estilo de la página se vea similar tanto en móvil como en ordenador de escritorio o portátil,*/
+body {							                               /* cambiar el color del fondo*/
+  background-color: burlywood; 				              /*cambiar el color de lo que sea*/
+  background-image: url;				                    /*cambiar el fondo por una imagen   */
+}							 
+
+/* comment here */					                       /* esta es la forma de comentar en un CSS*/
+width: 80%;(300px)					                       /* con esto se ubica el div*/
+text-align                                         /*alinear el texto*/
+margin                                             /*cambiar todos los margenes*/
+margin-top                                         /*cambiar margen superior*/
+margin-bottom                                      /*cambiar margen inferior*/
+margin-left						                             /* margen izquierdo*/
+margin-right		                                    /*margen derecho*/
+padding                                              /*margen despues del borde*/
+max-width                                           /*maximo de ancho*/
+min-width                                           /*minimo de ancho*/
+vertical-align                                      /*alinear de manera vertical*/
+font-family                                        /*cambiar la fuente */
+font-weight:bold;                                  /*Cambiar el estilo de la letra*/
+font-size                                          /*cambiar el tamaño de la fuente*/
+/* margen derecho*/
+.class-name {						                           /* selector de clase*/
+  styles
+}
+<article></article>	                              /*poner articulos dentro de un div*/
+
+2da parte /* PARTE DE COLORES*/
+
+background-color: rgb(255, 0, 0);	                /* 	seleccion de colores de fondo rgb	*/			
+hsl(240, 100%, 50%)				                        /*	para poner(hue,saturacion,luminosidad)*/
+linear-gradient 				                           /*	permite controlar la dirección de la transición a lo largo de una línea, y qué colores participan en el degradado.*/
+
+.class{
+  border-left: 10px double rgba(0, 0, 0, 0.75);     /*Forma de añadir bordes, en este caso a la izquierda*/
+  opacity: ;                                       /*forma de agregar opacidad al color (1.0 opaco-0.0 transparente)*/
+  box-shadow: offsetX offsetY color;               /*sirve para añdair sombras*/
+  box-shadow: offsetX offsetY blurRadius color;     /* para añadir sombras con difunacion*/
+  box-shadow: offsetX offsetY blurRadius spreadRadius color;  /*Para añadir sombras y expandirlas alrededor de todos los lados*/
+}
+
+3ra Parte /* PARTE DE */
+margin:(parte superior) (parte horizontal) (parte inferior)
+
+p {
+  filter: blur(3px);                      /*Forma de utilizar un filtro bluer(borroso)*/
+  border-radius:                          /*Se utiliza para darle un borde circulular*/
+  border-radius:La propiedad border-radius acepta hasta cuatro valores para redondear las esquinas superior izquierda, superior derecha, inferior derecha e inferior izquierda.
+  transform:rotate(-0.6deg);              /*Se utiliza para rotar la forma (-anti reloj)*/
+
+}
+
+*{
+  box-sizing: border-box;                   /**/
+}
+
+{
+  text-align:center;                        /*Sirve para centrar el texto*/
+  text-transform:uppercase;                 /*Sirve para poner todo el texto en mayuscula*/
+  padding:32px;                             /*relleno*/
+  background-color:#0a0a23;
+  color:#fff;
+}
+
+display:flex;
+/*Flexbox es un diseño CSS unidimensional que puede controlar la forma en que los elementos se espacian y alinean dentro de un contenedor.
+Para utilizarlo, dale a un elemento una propiedad display con el valor flex. Esto hará que el elemento sea un flex container (contenedor flexible). Todos los hijos directos de un contenedor flex se llaman flex items (elementos flex).*/
+
+flex-direction:
+/*row (por defecto): eje horizontal con elementos flex de izquierda a derecha
+row-reverse: eje horizontal con elementos flex de derecha a izquierda
+column: eje vertical con elementos flexibles de arriba a abajo
+column-reverse: eje vertical con elementos flexibles de abajo a arriba*/
+
+flex-wrap:
+/*La propiedad flex-wrap determina como se comportan tus elementos flex cuando el contenedor flex es demasiado pequeño. Si se establece como wrap, los elementos se colocan en la siguiente fila o columna. nowrap (por defecto) evitará que los elementos se coloquen en varias líneas y los encogerá si es necesario.*/
+
+justify-content:
+/**/
+
+aling-item:
+/*La propiedad align-items posiciona el contenido flex a lo largo del eje transversal. En este caso, con tu flex-direction establecido en row, el eje transversal sería vertical.*/
+
+objec-fit:
+/*para determinar como deben comportarse las imágenes.*/
+
+gap:
+/*La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.*/
+
+::after
+/*The ::after pseudo-element creates an element that is the last child of the selected element. You can use it to add an empty element after the last image. If you give it the same width as the images it will push the last image to the left when the gallery is in a two-column layout. Right now, it is in the center because you set justify-content: center on the flex container.*/
+
+font-weight:800;                    /*Esto hace que que le demos un estilo negrita a la letra*/
+
+etter-spacing                       /*se puede usar para ajustar el espacio entre cada carácter de texto en un elemento.*/
+
+display:flex;                       /*Se utiliza para hacer flexible el display*/
+justify-content:space-between;      /*Se utiliza para hacer un espaciado entre las letras*/
+align-items:flex-end;               /*alinea el objeto seleccionado en el final del cuadro*/
+
+::not                               /*El pseudo-selector :not se puede utilizar para seleccionar todos los elementos que no coincidan con la regla CSS dada.*/
+
+
+
+
+#logo{                                  /*Se utiliza para seleccionar las id en CSS*/
+
+}
+
+
+aspect-ratio:                           /*Sirve para declarar la relacion del aspecto*/
+
+La regla-at @media /*tiene una característica de medios llamada prefers-reduced-motion para establecer CSS basado en las preferencias del usuario. 
+Puede tomar uno de los siguientes valores:
+reduce
+no-preference*/
+
+span[class~="sr-only"]{
+  border: 0;
+  clip:rect(1px,1px,1px,1px);
+  clipPath:inset(50%);
+  overflow:hidden;
+  white-space:nowrap;
+  position:absolute;
+  padding:0;
+  margin:-1;
+}       /*Selecionara un elemnto span cuyo class incluya 'sr-only' esto se utiliza para que no se vea pero que se lea por la pantalla*/
+
+
+flex-direction:column-reverse;   /*esto mostrara los elementos anidados del fondo en la parte superior*/
+gap:1rem;                         /*Crea algo de espacio entre los elemntos*/
+
+:first-of-type /*Apunta al primer elemento del tipo delcarado */
+:last-of-type /*hace exactamente lo contrario - apunta al último elemento que coincida con el selector. Crea un selector*/
+
+/*La función*/ calc() /*es una función CSS que te permite calcular un valor basado en otros valores. Por ejemplo, lo puedes usar para calcular el ancho del viewport menos el margen de un elemento:*/
+.example {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+/*El pseudo-selector*/ :not() /*se utiliza para apuntar a todos los elementos que no coinciden con el selector */
+
+
+/*En lugar de tener que revisar constantemente que no sobrescribas tus propiedades, puedes usar la palabra clave */!important/*para asegurar que esas propiedades siempre serán aplicadas, sin importar el orden o la especificidad.*/
+
+border-collapse:collapse;         /*permitirá que los bordes de las celdas se contraigan en un solo borde, en lugar de un borde alrededor de cada celda*/
+
+
+
+
+
+
+

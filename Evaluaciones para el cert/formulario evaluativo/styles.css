@@ -1,0 +1,89 @@
+body {
+  width:100%;
+  margin:0;
+background-color:rgba(207, 72, 193, 0.8);
+background-image:linear-gradient(115deg,rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://www.tuexperto.com/wp-content/uploads/2022/02/17-fondos-de-pantalla-para-pc-de-gatitos-10-1200x675.jpg.webp);
+font-family: "Tahoma";
+font-size:1.5em;
+}
+
+h1, p {
+  margin:1em auto;
+  text-align:center;
+}
+
+form{
+  width:60vw;
+  max-width:500px;
+  min-width:300px;
+  margin:20 auto;
+  padding-bottom:2em;
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+.inline{
+  margin: 0 0.5em 0 0;
+  vertical-align:middle;
+  border-radius:0.25rem;
+}
+
+label{
+  display:block;
+  margin:0.5em 0 ;
+}
+
+div{
+  display:block;
+  border-radius:0.5rem;
+}
+
+.general{
+  background-color:rgba(195, 208, 230, 0.4);
+  width:400;
+  margin:0 auto;
+  padding:0.5em;
+  
+}
+
+.grupoFormulario{
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select{
+    width: 98%;
+    min-height: 2em;
+  }
+
+form{
+  margin-top:-0.5em;
+}
+
+fieldset{
+    border:none;
+    margin-right:6.3rem;
+    padding: 0rem 0rem ;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+  fieldset:last-of-type{
+    border-bottom:none;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
+  }
